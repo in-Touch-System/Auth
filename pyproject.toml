@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "auth"
+version = "0.1.0"
+description = "Auth microservice"
+authors = ["HexRo <deff0427@gmail.com>"]
+readme = "readme.md"
+packages = [{ include = "app" }]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "*"
+uvicorn = { version = "*", extras = ["standard"] }
+sqlalchemy = { version = "*", extras = ["asyncio"] }
+pydantic = "*"
+python-jose = "^3.3"
+passlib = "^1.7"
+pydantic-settings = "^2.10.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+black = "^24.0"
+isort = "^5.12"
