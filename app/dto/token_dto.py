@@ -6,11 +6,11 @@ class RefreshByRefreshTokenRequestDTO(BaseDTOModel):
     refresh_token: str
 
 
-class RefreshByRefreshTokenResponseDTO(BaseDTOModel):
-    refresh_token: str
-
-
 class TokenResponseDTO(BaseDTOModel):
     access_token: str
     refresh_token: str
-    expired_date: datetime
+    exp: datetime
+
+
+class RefreshByRefreshTokenResponseDTO(TokenResponseDTO):
+    pass
