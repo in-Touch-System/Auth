@@ -15,19 +15,15 @@ from .signup_dto import (
 )
 
 __all__ = [
-    # base_dto.py
     "BaseDTOModel",
 
-    # signin_dto.py
     "SignInWithPhoneNumberRequestDTO",
     "SignInWithEmailAndPasswordRequestDTO",
     "SignInResponseDTO",
 
-    # signup_dto.py
     "SignUpWithPhoneNumberRequestDTO",
     "SignUpWithEmailAndPasswordRequestDTO",
 
-    # token_dto.py
     "RefreshByRefreshTokenRequestDTO",
     "RefreshByRefreshTokenResponseDTO",
     "TokenResponseDTO",
